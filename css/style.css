@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica ,SimHei;
+}
+
+
+
+.body {
+    margin:0;
+    list-style: none;
+    
+}
+
+
+.titleforKV {
+    position:relative;
+    text-align: center;
+    margin-top:220px;
+}
+
+.categories {
+    font-size: 16px;
+    color:#ffffff;
+    letter-spacing: 5px;
+    margin:15px;
+}
+
+.covertitle {
+    font-size:45px;
+    color:#ffffff;
+    letter-spacing: 5px;
+}
+
+
+
+/*
+.key-visual {
+    position:fixed;
+    width:100%;
+    background-image: url(../image/keyvisual.jpg);
+    background-position: center;
+    background-size:cover;
+    height:600px;
+    z-index: -5;
+    top:0;
+}
+*/
+
+.slider {
+    width:100%;
+    position:fixed;
+    height: 600px;
+    z-index: -5;
+    top:0;
+
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide1 {
+    background: url(../image/keyvisual.jpg)no-repeat center;
+    background-size: cover;
+    animation:fade 15s infinite;
+    -webkit-animation:fade 15s infinite;
+
+} 
+.slide2 {
+    background: url(../image/03.jpg)no-repeat bottom;
+    background-size: cover;
+    animation:fade2 15s infinite;
+    -webkit-animation:fade2 15s infinite;
+}
+.slide3 {
+    background: url(../image/04.jpg)no-repeat bottom;
+    background-size: cover;
+    animation:fade3 15s infinite;
+    -webkit-animation:fade3 15s infinite;
+}
+@keyframes fade
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+@keyframes fade3
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
+
+
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.main-page {
+    position: relative;
+    margin-top: -160px;
+    height:1700px;
+    width:100%;
+    background: #ffffff;
+    
+}
+
+
+.word-title {
+    
+    width:100%;
+    height: 200px;
+    margin: 0 auto;
+    line-height: 50px;
+    letter-spacing: 2px;
+    background:#ffffff;
+    padding-top:20px;
+    
+}
+
+.navbuttom{
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 7px;
+    width:80px;
+    height:40px;
+    border-bottom-style:solid;
+    border-width:2px;
+    opacity:0;
+    transition: 0.5s ease;
+    
+
+}
+
+.navbuttom:hover{
+    opacity:1
+}
+
+
+.navigationleft { 
+    position: absolute;
+    padding-top: 40px;
+    left:73px;
+   
+}
+
+.mainlogo {
+    width:202px;
+   height:0px;
+   
+    display: block;
+    margin: 0 auto;
+    padding:0 50px 0 50px;
+    
+}
+
+.navigationright {
+    position: absolute;
+   right:73px;
+    padding-top: 40px;
+    
+}
+
+
+.top-nav li{
+    display: inline-block;
+
+}
+.top-nav li a {
+    text-decoration: none;
+    color:#575353;
+    font-size:16px;
+    padding:15px;
+}
+
+
+.navigationtwo {
+    position:fixed;
+    width:100%;
+    display:block;
+    top:0px;
+    height: 180px;
+    margin: 0 auto;
+    line-height: 50px;
+    letter-spacing: 2px;
+    background:rgba(255, 255, 255, 0.79);
+    padding-top:20px;
+    z-index:2;
+    
+}
+
+
+
+.porfoliogallery {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    z-index:1;
+    width: 90%;
+    min-height: 100px;
+    top:200px;
+    padding:0px;
+   
+    
+    
+}
+
+.feature {
+    position:absolute;
+    width: 100%;
+    height:50px;
+    background: rgba(255, 255, 255, 0.63);
+    bottom:0px;
+    opacity: 0;
+}
+
+.workimage01:hover .feature {
+    transition: 0.5s ease;
+    opacity:1;
+}
+
+.workimage01 {
+    position:relative;
+    height:180px;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.homepage-row {
+   
+}
+
+.morebuttom {
+    margin:0 auto;
+    text-align: center;
+    width:150px;
+    height:35px;
+    font-size: 14px;
+    font-style:bold;
+    color:#6c6868;
+    margin-top: 300px;
+    letter-spacing: 3px;
+    font-family: Bodoni;
+    border-bottom-style:solid;
+    border-width:2px;
+}
+.footer {
+    margin:0 auto;
+    position: relative;
+    padding:0px 0 40px 0;
+
+}
+
+
+.webinfo{
+    position:absolute;
+    right:65px;
+    bottom:40px;
+    width:150px;  
+
+}
+
+
+#webinfo ul{
+    
+    display: block;
+    
+}
+.webinfo li{
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    font-size:18px;
+    letter-spacing: 10px;
+    float:left;
+}
+
+.webinfo span {
+    float: left;
+    padding-right: 20px;
+    color:#6c6868;
+}
+
